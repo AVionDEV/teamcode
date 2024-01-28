@@ -1,0 +1,14 @@
+html 
+head 
+    link(rel="stylesheet", href="/public/auth/style.css")
+body 
+    .wrapper 
+        h2 TeamCode
+        form(action="/api/auth", method="post") 
+            .inputs 
+                .row 
+                    input(type='text',name='login', placeholder='Enter your username / email')
+                .row 
+                    input(type='password',name='password', placeholder='Enter your password')
+            button(type="submit") Sign-in
+    script(src="/public/auth/script.js") 

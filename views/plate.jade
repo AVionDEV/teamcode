@@ -1,0 +1,23 @@
+html 
+    head 
+        link(rel="stylesheet", href="/public/plate/style.css") 
+    body 
+        script(src="/public/plate/script.js") 
+        header 
+            h2.headerText TeamCode 
+        .content 
+            .projectPlates 
+                .user#userPlate
+                    .avatar
+                        .circle 
+                    .data#userData 
+                        span(name='username')
+                        span(name='id')
+                .team#teamPlate 
+                .plates#plates 
+                .actions 
+            .workspace#workspace
+                .title 
+                    input.titlebar.inp(placeholder="Untitled", name='titlebar')
+                .textarea#textarea
+                    textarea.inp#textar(placeholder='Type here...', name='textarea')

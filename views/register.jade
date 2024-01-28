@@ -1,0 +1,19 @@
+html 
+head 
+    link(rel="stylesheet", href="/public/register/style.css")
+body 
+    .wrapper 
+        h2 TeamCode
+        form#register_form(action="/api/register", method="post") 
+            .inputs 
+                .row 
+                    input(type='text',name='username', placeholder='Enter your username')
+                    input(type='email',name='email', placeholder='Enter your email')
+                .row 
+                    input(type='text',name='firstname', placeholder='Enter your firstname (optional)')
+                    input(type='text',name='lastname', placeholder='Enter your lastname (optional)')
+                .row 
+                    input(type='password',name='password', placeholder='Enter your password')
+                    input(type='password',name='password_repeat', placeholder='Repeat your password')
+            button(type="submit") Sign-up
+    script(src="/public/register/script.js") 
